@@ -65,8 +65,8 @@ class Header extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-3 col-lg-3">
-                                <a className="coding">
-                                    <img src={`${process.env.PUBLIC_URL}/images/coding.png`} alt="coding" />
+                                <a className="logo">
+                                    <img src={`${process.env.PUBLIC_URL}/images/coding.jpg`} alt="" />
                                 </a>
                             </div>
                             <div className="col-md-9 col-lg-9">

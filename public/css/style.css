@@ -125,7 +125,7 @@ h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
 	color:inherit;
 }
 /*--- 02. Logo ---*/
-.coding img{
+.logo img{
 	margin-top:62px;
 }
 /*--- 03. Top-header ---*/
@@ -1526,7 +1526,7 @@ a.ht-btn-3x{
 	background-image:url('../images/slide_4.png');
 }
 .banner-bg-4{
-	background-image:url('../images/coding.jpg');
+	background-image:url('../images/');
 }
 .banner-bg-5{
 	background-image:url('../images/slide_5.png');
@@ -2062,7 +2062,7 @@ img.mfp-img{
 	.banner-item h5{
 		font-size:14px;
 	}
-	.coding img{
+	.logo img{
 		width:150px;
 		margin-bottom:-80px;
 		margin-top:0px;
@@ -2086,20 +2086,20 @@ img.mfp-img{
 }
 @media (max-width : 767px){
 	/*--- Logo ---*/
-	.coding{
+	.logo{
 		margin-bottom:5px;
 		background:none;
 		float:left;
 	}
-	.coding::after,.coding::before{
+	.logo::after,.logo::before{
 		display:none;
 	}
-	.coding img{
+	.logo img{
 		width:100px;
 		margin-top:10px;
 		margin-bottom:10px;
 	}
-	a.coding-1{
+	a.logo-1{
 		height:auto;
 	}
 	.top-header ul li a{
