@@ -1,16 +1,16 @@
 import React,{Component} from 'react';
 import { connect } from "react-redux";
-import { removeFromWhishList,addToBasket} from '../actions';
+import { removeFromwishlist,addToBasket} from '../actions';
 
 
 
 
-class  WhishList extends Component {
+class  wishlist extends Component {
 
   constructor(props) {
     super(props);
     this.state = { 
-        whishlistproducts: {}
+        wishlistproducts: {}
   };
   }
 
@@ -52,7 +52,7 @@ class  WhishList extends Component {
         </div>
         
         <div className="col-sm-1 col-md-1 col-lg-1 cart-item">
-          <i className="fa fa-remove cart-remove-btn" onClick={()=>this.props.removeFromWhishList(product)}/>
+          <i className="fa fa-remove cart-remove-btn" onClick={()=>this.props.removeFromwishlist(product)}/>
         </div>
         
       </div>
@@ -98,7 +98,7 @@ class  WhishList extends Component {
         <div style={parentStyle}>
           <div className="display-inline-block width-100" >
 
-            {this.props.whishlistproducts.map((e)=>this.renderItem(e))}
+            {this.props.wishlistproducts.map((e)=>this.renderItem(e))}
             
             
             {/*
@@ -120,9 +120,9 @@ class  WhishList extends Component {
    
 
 };
-function mapStateToProps({ whishlistproducts }) {
-  return { whishlistproducts };
+function mapStateToProps({ wishlistproducts }) {
+  return { wishlistproducts };
 }
 
-export default connect(mapStateToProps,{addToBasket,removeFromWhishList})(WhishList);
+export default connect(mapStateToProps,{addToBasket,removeFromwishlist})(wishlist);
 

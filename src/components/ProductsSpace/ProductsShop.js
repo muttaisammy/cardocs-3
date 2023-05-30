@@ -16,7 +16,7 @@ class ProductsShop extends Component{
     }
 
     componentDidMount() {
-        this.props.fetchProducts('TYRES&WHEELS');
+        this.props.fetchProducts('OS VERSION');
     }
 
     renderFiltredProducts(activePage){
@@ -41,8 +41,8 @@ class ProductsShop extends Component{
                                     </div>
                                     <ul className="collapse in" id="collapseExample">
                                        
-                                        <li className={this.state.activePage === 'TYRES&WHEELS' ? 'active' : ''}><a onClick={()=>this.renderFiltredProducts('TYRES&WHEELS')} >Desktop Windows PC<i className="fa fa-chevron-right pull-right"></i></a></li>
-                                        <li  className={this.state.activePage === 'BRAKES&DISCS' ? 'active' : ''}><a onClick={()=>this.renderFiltredProducts('BRAKES&DISCS')} >Desktop Unix <i className="fa fa-chevron-right pull-right"></i></a></li>
+                                        <li className={this.state.activePage === 'OS VERSION' ? 'active' : ''}><a onClick={()=>this.renderFiltredProducts('OS VERSION')} >Desktop Windows PC<i className="fa fa-chevron-right pull-right"></i></a></li>
+                                        <li  className={this.state.activePage === 'UNIX FLAVOR' ? 'active' : ''}><a onClick={()=>this.renderFiltredProducts('UNIX FLAVOR')} >Desktop Unix <i className="fa fa-chevron-right pull-right"></i></a></li>
                                         <li><a >Desktop Mackintosh<i className="fa fa-chevron-right pull-right"></i></a></li>
                                         <li><a  >Laptop PC<i className="fa fa-chevron-right pull-right"></i></a></li>
                                         <li><a  >Laptop Unix<i className="fa fa-chevron-right pull-right"></i></a></li>

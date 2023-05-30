@@ -20,13 +20,13 @@ class CarDetails extends React.Component {
 								<div className="col-lg-6">
 									<ul className="ht-breadcrumb pull-left">
 									<li className="home-act"><a><i className="fa fa-home"></i></a></li>
-									<li className="home-act"><Link to={"/cars"}>Cars</Link></li>
+									<li className="home-act"><Link to={"/softwares"}>Cars</Link></li>
 									
 									<li className="active">{name}</li>
 									</ul>
 								</div>
 								<div className="col-lg-6">
-									<Link to={"/cars"} style={{width:25}} className="col-sm-1 col-md-1 col-lg-1 p-lg-0 ht-btn ht-btn-default pull-right">
+									<Link to={"/softwares"} style={{width:25}} className="col-sm-1 col-md-1 col-lg-1 p-lg-0 ht-btn ht-btn-default pull-right">
 										<i  style={{marginLeft:7}} className="fa fa-remove center"/>
 									</Link> 								
 								</div>

@@ -1,28 +1,28 @@
 import React,{Component} from 'react' ;
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import {fetchSingleProduct, addToBasket,addToWhishList,removeFromWhishList } from '../../actions';
+import {fetchSingleProduct, addToBasket,addTowishlist,removeFromwishlist } from '../../actions';
 
 class ProductItemCard extends Component{
 
     constructor(props) {
         super(props);
-        this.state={isInWhishList:false,
+        this.state={isInwishlist:false,
                     product:props.product,
                     isHovered:false
                     };
     };
       
     /**To add or remove product from wishList */
-    ToggleProductWhishlist(event){
+    ToggleProductwishlist(event){
         var product = JSON.parse(event.target.id);
-        if(!this.state.isInWhishList){
-            this.props.addToWhishList(product);
-            this.setState({isInWhishList:true});
+        if(!this.state.isInwishlist){
+            this.props.addTowishlist(product);
+            this.setState({isInwishlist:true});
         }
         else{  
-            this.props.removeFromWhishList(product);
-            this.setState({isInWhishList:false});
+            this.props.removeFromwishlist(product);
+            this.setState({isInwishlist:false});
             
         }
     }
@@ -30,8 +30,8 @@ class ProductItemCard extends Component{
     componentDidMount(){
         var product= this.props.product;
         
-        if(this.props.whishlistproducts.filter(function(e){return e._id === product._id}).length===1){
-            this.setState({isInWhishList:true})
+        if(this.props.wishlistproducts.filter(function(e){return e._id === product._id}).length===1){
+            this.setState({isInwishlist:true})
         }
     }
     /**for heart icon style */
@@ -89,9 +89,9 @@ class ProductItemCard extends Component{
                         </a>
                         <ul className="absolute-caption">
                         <li>
-                            <i id={JSON.stringify(product)} className={this.state.isInWhishList ? "fa fa-heart" : "fa fa-heart-o"} 
+                            <i id={JSON.stringify(product)} className={this.state.isInwishlist ? "fa fa-heart" : "fa fa-heart-o"} 
                             style={heartStyle} 
-                            onClick={this.ToggleProductWhishlist.bind(this)}
+                            onClick={this.ToggleProductwishlist.bind(this)}
                             onMouseEnter={this.mouseHover.bind(this)}
                             onMouseLeave={this.mouseUnHover.bind(this)}
                             />
@@ -118,9 +118,9 @@ class ProductItemCard extends Component{
 
 };
 
-function mapStateToProps({ whishlistproducts }) {
-    return { whishlistproducts };
+function mapStateToProps({ wishlistproducts }) {
+    return { wishlistproducts };
 }
 
 
-    export default connect(mapStateToProps,{fetchSingleProduct, addToBasket, addToWhishList, removeFromWhishList})(ProductItemCard) ;
+    export default connect(mapStateToProps,{fetchSingleProduct, addToBasket, addTowishlist, removeFromwishlist})(ProductItemCard) ;

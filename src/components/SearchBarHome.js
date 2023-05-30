@@ -41,7 +41,7 @@ class SearchBarHome extends Component {
     }
 
 
-    this.props.history.push('/cars');
+    this.props.history.push('/softwares');
     this.props.filters(filter);         
 
   }

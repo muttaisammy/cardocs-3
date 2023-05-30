@@ -49,9 +49,9 @@ class Header extends Component {
                                         </a>
                                     </li>
                                     <li className="cart-icon">
-                                        <Link to={"/whishlist"}>
+                                        <Link to={"/wishlist"}>
                                             <i className="fa fa-heart" />
-                                            <span className="badge">{this.props.whishlistproducts.length}</span>
+                                            <span className="badge">{this.props.wishlistproducts.length}</span>
                                         </Link>
                                     </li>
                                     <Basket />
@@ -106,7 +106,7 @@ class Header extends Component {
                                         </Link>
                                                         </li>
                                                         <li className="dropdown" onClick={() => this.props.turnOffHomefilter()}>
-                                                            <Link to={"/cars"} className="dropdown-toggle">
+                                                            <Link to={"/softwares"} className="dropdown-toggle">
                                                                 SOFTWARES
                                         </Link>
                                                         </li>
@@ -153,8 +153,8 @@ class Header extends Component {
         );
     }
 };
-function mapStateToProps({ whishlistproducts }) {
-    return { whishlistproducts };
+function mapStateToProps({ wishlistproducts }) {
+    return { wishlistproducts };
 }
 
 export default connect(mapStateToProps, { turnOffHomefilter })(Header);

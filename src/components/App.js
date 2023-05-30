@@ -16,7 +16,7 @@ import SellA_Car from "./sellA_Car"
 import ContactUs from "./contactUs"
 import CartFull from "./CartFull";
 import CarDetails from './CarsSpace/CarDetails';
-import WhishList from './WishList';
+import wishlist from './WishList';
 import Lic from './Lic';
 import SavedLic from './SavedLic';
 
@@ -75,7 +75,7 @@ class App extends Component {
             <Route exact path="/products_cart" component={CartFull} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/whishlist" component={WhishList} />
+            <Route exact path="/wishlist" component={wishlist} />
             <Route exact path="/apps/singlproduct" component={CarShop} />
             <Route exact path="/products/singlproduct" component={ProductsShop} />
             <Route exact path="/lic" component={Lic} />

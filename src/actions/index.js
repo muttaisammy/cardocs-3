@@ -7,8 +7,8 @@ import {
   FETCH_CARS,
   FETCH_SINGLE_CAR,
   BASKET_EDIT_ITEM,
-  WHISHLIST_ADD_PRODUCT,
-  WHISHLIST_REMOVE_PRODUCT,
+  wishlist_ADD_PRODUCT,
+  wishlist_REMOVE_PRODUCT,
   SELECTED_PRODUCT,
   SELECTED_CAR,
   FILTER_ACTIVATION
@@ -61,27 +61,27 @@ export function changeBasketItem(product, quantity) {
   };
 }
 
-export function addToWhishList(product) {
+export function addTowishlist(product) {
   return {
-    type: WHISHLIST_ADD_PRODUCT,
+    type: wishlist_ADD_PRODUCT,
     payload: product
   };
 }
 
-export function removeFromWhishList(product) {
+export function removeFromwishlist(product) {
   return {
-    type: WHISHLIST_REMOVE_PRODUCT,
+    type: wishlist_REMOVE_PRODUCT,
     payload: product
   };
 }
 
 export const fetchCars = () => async dispatch => {
-  const res = await axios.get("/api/cars");
+  const res = await axios.get("/api/softwares");
   dispatch({ type: FETCH_CARS, payload: res.data });
 };
 
 export const fetchCar = id => async dispatch => {
-  const res = await axios.get(`/api/car/:${id}`);
+  const res = await axios.get(`/api/software/:${id}`);
   dispatch({ type: FETCH_SINGLE_CAR, payload: res.data });
 };
 

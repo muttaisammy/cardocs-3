@@ -1,35 +1,35 @@
 import React,{Component} from 'react' ;
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchSingleCar,addToWhishList,removeFromWhishList } from '../../actions';
+import { fetchSingleCar,addTowishlist,removeFromwishlist } from '../../actions';
 
 class CarItemCard extends Component{
 
 
     constructor(props) {
         super(props);
-        this.state={isInWhishList:false,
+        this.state={isInwishlist:false,
                     car:props.car,
                     isHovered:false
                     };
     };
-    ToggleCarWhishlist(event){
+    ToggleCarwishlist(event){
         var car = JSON.parse(event.target.id);
-        if(!this.state.isInWhishList){
-            this.props.addToWhishList(car);
-            this.setState({isInWhishList:true});
+        if(!this.state.isInwishlist){
+            this.props.addTowishlist(car);
+            this.setState({isInwishlist:true});
         }
         else{  
-            this.props.removeFromWhishList(car);
-            this.setState({isInWhishList:false});
+            this.props.removeFromwishlist(car);
+            this.setState({isInwishlist:false});
             
         }
     }
     componentDidMount(){
         var car= this.props.car;
         
-        if(this.props.whishlistproducts.filter(function(e){return e._id === car._id}).length===1){
-            this.setState({isInWhishList:true})
+        if(this.props.wishlistproducts.filter(function(e){return e._id === car._id}).length===1){
+            this.setState({isInwishlist:true})
         }
     }
     mouseHover(event){
@@ -73,15 +73,15 @@ class CarItemCard extends Component{
                     </li>
                     
                     <li onClick={()=>this.props.fetchSingleCar(car)}>
-                        <Link to={`/cars/singlproduct`}>
+                        <Link to={`/softwares/singlproduct`}>
                         <i className="fa fa-search" />View
                         </Link>
                     </li>
                      
                     <li onMouseEnter={this.mouseHover.bind(this)} onMouseLeave={this.mouseUnHover.bind(this)}>
-                            <i id={JSON.stringify(car)} className={this.state.isInWhishList ? "fa fa-heart" : "fa fa-heart-o"} 
+                            <i id={JSON.stringify(car)} className={this.state.isInwishlist ? "fa fa-heart" : "fa fa-heart-o"} 
                             style={heartStyle} 
-                            onClick={this.ToggleCarWhishlist.bind(this)}      
+                            onClick={this.ToggleCarwishlist.bind(this)}      
                             />WishList
                     </li>
                                      
@@ -98,9 +98,9 @@ class CarItemCard extends Component{
 
 
 
-function mapStateToProps({ whishlistproducts }) {
-    return { whishlistproducts };
+function mapStateToProps({ wishlistproducts }) {
+    return { wishlistproducts };
 }
 
 
-export default connect(mapStateToProps,{ fetchSingleCar, addToWhishList, removeFromWhishList})(CarItemCard) ;
+export default connect(mapStateToProps,{ fetchSingleCar, addTowishlist, removeFromwishlist})(CarItemCard) ;
