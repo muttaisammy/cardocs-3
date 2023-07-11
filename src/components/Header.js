@@ -16,7 +16,7 @@ class Header extends Component {
                                 <p className="f-14">
                                 <Link to={"/"}>
                                     <i className="fa fa-map-marker m-r-lg-5" />
-                                    <strong>KENSTATE ALLIED</strong>- "All things IT software & hardware."
+                                    <strong>KENSTATE ALLIED</strong>- "All THINGS DIGITAL"
                                 </Link>
                         </p>
                             </div>
@@ -39,7 +39,7 @@ class Header extends Component {
                                         <a className="icon-1">
                                             <i className="fa fa-user" />
                                             {/* <span>My Account</span> */}
-                                            <h1><a className="navbar-brand" href="/lic"> Software search</a></h1>
+                                            <h1><a className="navbar-brand" href="/lic"> SEARCH</a></h1>
                                         </a>
                                     </li>
                                     <li>
@@ -71,7 +71,7 @@ class Header extends Component {
                             </div>
                             <div className="col-md-9 col-lg-9">
                                 <div className="hotline">
-                                    <span className="m-r-lg-10">Have Enquiries? Call us:</span>
+                                    <span className="m-r-lg-10">WE ARE ON WHATSAPP 24/7:</span>
                                     <a href="+254 052417">
                                         <i className="fa fa-phone" />+254 724 052 417
                         </a>
@@ -107,17 +107,17 @@ class Header extends Component {
                                                         </li>
                                                         <li className="dropdown" onClick={() => this.props.turnOffHomefilter()}>
                                                             <Link to={"/softwares"} className="dropdown-toggle">
-                                                                SOFTWARES
+                                                                SOFTWARES 
                                         </Link>
                                                         </li>
                                                         <li className="dropdown">
                                                             <Link to={"/products"} className="dropdown-toggle">
-                                                                PRODUCTS
+                                                                HARDWARE PRODUCTS
                                         </Link>
                                                         </li>
                                                         <li className="dropdown">
                                                             <Link to={"/sellapp"} className="dropdown-toggle">
-                                                                Need a product?
+                                                                HIGH SPEED INTERNET
                                         </Link>
                                                         </li>
                                                     </ul>

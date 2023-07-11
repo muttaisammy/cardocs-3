@@ -26,10 +26,10 @@ const ContactUs = () =>{
                             <div className="content">
                                 <p>Thank you.</p>
                                 <ul className="list-default">
-                                    <li><i className="fa fa-clock-o"></i>NAIROBI, KENYA</li>
+                                    <li><i className="fa fa-clock-o"></i>ELDORET, KENYA</li>
                                     <li><i className="fa fa-phone"></i>+254 724 052 417</li>
-                                    <li><i className="fa fa-envelope-o"></i>admin@kenstate.42web.io</li>
-                                    <li><i className="fa fa-globe"></i>www.kenstate.42web.io</li>
+                                    <li><i className="fa fa-envelope-o"></i>kenstatellc@gmail.com</li>
+                                    <li><i className="fa fa-globe"></i>www.kenstate-web.netlify.app</li>
                                 </ul>
                             </div>
                         </div>

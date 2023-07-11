@@ -27,14 +27,14 @@ const Footer = () => {
                         <i className="fa fa-envelope-o" />kenstatellc@gmail.com
                         </li>
                         <li>
-                        <i className="fa fa-globe" />http://www.kenstate.42web.io
+                        <i className="fa fa-globe" />http://www.kenstate-web.netlify.app
                         </li>
                     </ul>
                     </div>
                     <div className="col-xs-12 col-sm-4 col-md-4">
                     <div className="newsletter text-left">
                         <div className="heading-1">
-                        <h3>Newsletter</h3>
+                        <h3>Blog</h3>
                         </div>
                         <p>
                         Coming Soon !{" "}
@@ -56,32 +56,32 @@ const Footer = () => {
                     </div>
                     <div className="col-xs-12 col-sm-4 col-md-4">
                     <div className="heading-1">
-                        <h3>Quick Links</h3>
+                        <h3>These are what we offer</h3>
                     </div>
                     <ul className="list-default">
                         <li>
                         <a  >
-                            <i className="fa fa-angle-right" />Privacy Policy
+                            <i className="fa fa-angle-right" />Software Development & Sales
                         </a>
                         </li>
                         <li>
                         <a  >
-                            <i className="fa fa-angle-right" />Community
+                            <i className="fa fa-angle-right" />Internet Service Provisioning
                         </a>
                         </li>
                         <li>
                         <a  >
-                            <i className="fa fa-angle-right" />Blog
+                            <i className="fa fa-angle-right" />Hardware Sales and Service
                         </a>
                         </li>
                         <li>
                         <a  >
-                            <i className="fa fa-angle-right" />Guide use
+                            <i className="fa fa-angle-right" />Training & Consultancy
                         </a>
                         </li>
                         <li>
                         <a  >
-                            <i className="fa fa-angle-right" />Our Servces
+                            <i className="fa fa-angle-right" />CCTV installation
                         </a>
                         </li>
                     </ul>
@@ -97,7 +97,7 @@ const Footer = () => {
                     <div className="col-md-6">
                     <p>
                         © 2023 Designed by{" "}
-                        <a href="https://Kenstate.42web.io">KENSTATE ALLIED</a>.
+                        <a href="https://Kenstate-web.netlify.app">KENSTATE ALLIED</a>.
                         All rights reserved
                     </p>
                     </div>
